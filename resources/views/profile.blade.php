@@ -3,4 +3,10 @@
 <p>Apellido: {{ $user->last_name }}</p>
 <p>Número Telefónico: {{ $user->phone_number }}</p>
 <p>Correo Electrónico: {{ $user->email }}</p>
-<a href="{{ route('logout') }}">Cerrar Sesión</a>
+
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    @csrf
+</form>
+<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+    Cerrar Sesión
+</a>
