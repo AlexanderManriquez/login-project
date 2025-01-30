@@ -104,5 +104,7 @@ Autenticación
 El proyecto incluye vistas de autenticación básicas (registro, inicio de sesión y perfil de usuario).
 
 Registro: <http://localhost:8000/register>
+
 Inicio de sesión: <http://localhost:8000/login>
+
 Perfil: <http://localhost:8000/profile>
